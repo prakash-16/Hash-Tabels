@@ -29,6 +29,16 @@ public class MyHashMap<K, V> {
 		}
 	}
 	
+	public void removal(K key) {
+		MyHashMapNode myHashMapNode = (MyHashMapNode<K, V>) this.myLinkedList.search(key);
+		if(myHashMapNode == null) {
+			System.out.println("Key is not in list");
+		}
+		else {
+			myLinkedList.remove(key);	
+		}
+		
+	}
 	@Override
 	public String toString() {
 		return "MyHashMapNodes{" + myLinkedList + '}';
