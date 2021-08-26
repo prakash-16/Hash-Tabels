@@ -3,7 +3,7 @@ package com.bridgelabz.hashtables;
 public class MyHashMapRunner {
 
 	public static void main(String[] args) {
-		String sentence = "to be or not to be";
+		String sentence = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately inti paranoid avoidable situations";
 		MyHashMap<String, Integer> myHashMap = new MyHashMap();
 		String[] words = sentence.toLowerCase().split(" ");
 		for (String word : words) {
@@ -15,7 +15,7 @@ public class MyHashMapRunner {
 			}
 			myHashMap.add(word, value);
 		}
-		int frequency = myHashMap.getData("to");
+		int frequency = myHashMap.getData("Paranoid".toLowerCase());
 		System.out.println("The frequency is " + frequency);
 		System.out.println(myHashMap.toString());
 
